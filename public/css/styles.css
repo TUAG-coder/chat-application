@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,                                     /* line 45 - 51 are for applying border box */
+*:before,
+*:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+input {
+    font-size: 16px;
+	padding: 12px;
+	border: 1px solid #eeeeee;
+	outline: none;
+}
+
+body {
+    line-height: 1.4;
+    color: #333333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+button {
+	background: #07F6D6;
+	padding: 12px;
+	color: white;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background .3s ease;
+	border-radius: 5px;
+}
+
+button:hover {
+    background: #19A491;
+}
+
+button:disabled {             
+    cursor: default;
+    background: #8FD2C9;
+}
+
+.chat {
+	display: flex;
+}
+
+.chat_area {
+	flex-grow: 1;          
+	display: flex;        
+	flex-direction: column;
+	max-height: 100vh;
+	background-image: url("../images/background.png");
+}
+
+.users_area {
+	width: 400px;
+	height: 100vh;
+	color: white;
+	background-color: #B4FAC0;
+	overflow-y: scroll;
+}
+
+.compose {
+	display: flex;
+	flex-shrink: 0;
+	margin-top: 16px;
+	padding: 24px;
+	background-color: #B4FAC0;
+}
+
+.compose form {
+	display: flex;
+	flex-grow: 1;
+	margin-right: 16px;
+}
+
+.compose input {
+	display: flex;
+	flex-grow: 1;
+	margin-right: 16px;
+	border-radius: 5px;
+}
+
+.compose button {
+    font-size: 14px;
+}
+
+.chat_messages {
+	flex-grow: 1;
+	padding: 24px 24px 0 24px;
+	overflow-y: scroll;
+}
+
+.users_names {
+	font-weight: 600;
+	font-size: 15px;
+	margin-right: 10px;
+}
+
+.times_stamp {
+	color: #777;
+	font-size: 15px;
+}
+
+.message_content {
+	font-size: 15px;
+}
+
+.sent_messages {
+	margin-bottom: 15px;
+}
+
+.sent_messages a {
+	color: #1ED1DB;
+}
+
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+
+.join_page {
+	background: #f8c5f1;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.join_information {
+	border-radius: 10px;
+	box-shadow: 0px 0px 17px 1px #1D1F26;
+    background: #F7F7FA;
+    padding: 24px;
+    width: 250px;
+}
+
+.join_information h1 {
+	font-size: 50px;
+}
+
+.join_information input {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.join_information button {
+	width: 100%;
+}
+
+.room_title {
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	background-color: #09A7B6;
+}
+
+.users {
+	font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 4px;
+    padding: 12px 24px 0 24px;
+}
+
+.users_list {
+	padding: 18px 24px 0 24px;
+	list-style-type: none;
+}
+
+.list {
+	margin-bottom: 5px;
+}
