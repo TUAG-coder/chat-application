@@ -25,7 +25,7 @@
                         <input name="Message" placeholder="Type" type="text" required autocomplete="off">
                         <button type="submit">Send</button>
                     </form>
-                    <button id="send-location">Send Location</button>
+                    <button id="send-location"></button>
                 </div>
                 
             </div>
@@ -33,24 +33,27 @@
         
         <script id="message-template" type="text/html">
             <div class="sent_messages">
-                <p>
-                    <span class=users_names> {{username}} </span>
-                    <span class=times_stamp> {{createdAt}} </span>
-                </p>
-                
-                <p class="message_content"> {{message}} </p>
+                <div class="bubble">
+                    <p>
+                        <span class=users_names> {{username}} </span>
+                        <span class=times_stamp> {{createdAt}} </span>
+                    </p>
+                    
+                    <p class="message_content"> {{message}} </p>
+                </div>
             </div>
-           
         </script>
 
         <script id="location-message-template" type="text/html">
             <div class="sent_messages">
-                <p>
-                    <span class=users_names> {{username}} </span>
-                    <span class=times_stamp> {{createdAt}} </span>
-                </p>
+                <div class="bubble">
+                    <p>
+                        <span class=users_names> {{username}} </span>
+                        <span class=times_stamp> {{createdAt}} </span>
+                    </p>
 
-                <p> <a href="{{url}}" target="_blank" > My current location </a> </p>
+                    <p> <a href="{{url}}" target="_blank" > My current location </a> </p>
+                </div>
             </div>
         </script>
 

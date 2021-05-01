@@ -88,6 +88,15 @@ button:disabled {
     background: #8FD2C9;
 }
 
+#send-location {
+	height: 44.4px;
+	width: 44.4px;
+	border-radius: 50%;
+	background: url('/images/location.png');
+	background-position: center;
+	background-size: cover;
+}
+
 .chat {
 	display: flex;
 }
@@ -106,7 +115,18 @@ button:disabled {
 	color: white;
 	background-color: #B4FAC0;
 	overflow-y: scroll;
+	overflow-x: none;
 }
+
+
+.bubble {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #F8B3EC;
+	border-radius: 10px;
+}
+
 
 .compose {
 	display: flex;
@@ -159,7 +179,7 @@ button:disabled {
 }
 
 .sent_messages a {
-	color: #1ED1DB;
+	color: #F3F3F3;
 }
 
 
