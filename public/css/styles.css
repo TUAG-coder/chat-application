@@ -69,11 +69,9 @@ body {
 
 
 button {
-	background: #07F6D6;
+	background: #dff58a;
 	padding: 12px;
-	color: white;
 	border: none;
-	font-size: 16px;
 	cursor: pointer;
 	transition: background .3s ease;
 	border-radius: 5px;
@@ -92,7 +90,7 @@ button:disabled {
 	height: 44.4px;
 	width: 44.4px;
 	border-radius: 50%;
-	background: url('/images/location.png');
+	background-image: url('/images/location.png');
 	background-position: center;
 	background-size: cover;
 }
@@ -124,7 +122,7 @@ button:disabled {
 	padding-left: 5px;
 	padding-right: 5px;
 	background-color: #F8B3EC;
-	border-radius: 10px;
+	border-radius: 8px;
 }
 
 .bubble p {
@@ -154,7 +152,12 @@ button:disabled {
 }
 
 .compose button {
-    font-size: 14px;
+    width: 44.4px;
+	height: 44.4px;
+	border-radius: 50%;
+	background-image: url('/images/send.png');
+	background-position: center;
+	background-size: cover;
 }
 
 .chat_messages {
