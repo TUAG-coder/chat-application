@@ -78,7 +78,7 @@ button {
 }
 
 button:hover {
-    background: #19A491;
+    background: #C1BD0B;
 }
 
 button:disabled {             
@@ -229,6 +229,7 @@ label {
 
 .join_information button {
 	width: 100%;
+	background: #0e9c89;
 }
 
 .room_title {
