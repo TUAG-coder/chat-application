@@ -127,6 +127,10 @@ button:disabled {
 	border-radius: 10px;
 }
 
+.bubble p {
+	display: flex;
+	flex-grow: 1;
+}
 
 .compose {
 	display: flex;
@@ -160,6 +164,8 @@ button:disabled {
 }
 
 .users_names {
+	display: flex;
+	flex-grow: 1;
 	font-weight: 600;
 	font-size: 15px;
 	margin-right: 10px;
@@ -180,6 +186,7 @@ button:disabled {
 
 .sent_messages a {
 	color: #F3F3F3;
+	text-decoration: none;
 }
 
 
