@@ -108,12 +108,11 @@ button:disabled {
 }
 
 .users_area {
-	width: 400px;
+	width: 20vw;
 	height: 100vh;
 	color: white;
 	background-color: #B4FAC0;
 	overflow-y: scroll;
-	overflow-x: none;
 }
 
 
@@ -128,6 +127,7 @@ button:disabled {
 .bubble p {
 	display: flex;
 	flex-grow: 1;
+	word-wrap: break-word;
 }
 
 .compose {
@@ -148,7 +148,7 @@ button:disabled {
 	display: flex;
 	flex-grow: 1;
 	margin-right: 16px;
-	border-radius: 5px;
+	border-radius: 22%;
 }
 
 .compose button {
@@ -164,6 +164,7 @@ button:disabled {
 	flex-grow: 1;
 	padding: 24px 24px 0 24px;
 	overflow-y: scroll;
+	width: 80vw;
 }
 
 .users_names {
@@ -233,10 +234,10 @@ label {
 }
 
 .room_title {
+	text-align: center;
 	font-size: 50px;
-	display: flex;
-	justify-content: center;
 	background-color: #09A7B6;
+	word-wrap: break-word;
 }
 
 .users {
