@@ -263,10 +263,21 @@ label {
 footer {
 	position: absolute;
 	bottom: 10px;
+	font-size: 16px;
+	color: #7D757D;
 }
 
-input[type="text"]::-webkit-search-cancel-button {
-	cursor: pointer;
-  }
+#leave-button {
+	width: 44.4px;
+	height: 44.4px;
+	border-radius: 50%;
+	background: transparent;
+	background-image: url('/images/exit.png');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 8px;
+	right: 20px;
+}
 
 

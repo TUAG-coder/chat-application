@@ -111,3 +111,28 @@ socket.on('usersList', (roomData) => {
     });
     $users.innerHTML = html;
 });
+
+/*
+const $leaveRoom = document.querySelector('#leave-button');
+let a =1;
+$leaveRoom.addEventListener('click', () => {
+    console.log(a);
+    console.log("ohh");
+    a++;
+    $leaveRoom.click();
+    
+    console.log(a);
+});
+*/
+
+const $leaveRoom = document.querySelector('#leave-button');
+$leaveRoom.addEventListener('click', () => {
+    const conf = confirm("Are you sure, you want to leave the room?");
+    if (conf === true) {
+        $leaveRoom.setAttribute("onclick", "location.href='/';");
+        $leaveRoom.click();
+    }
+    else {
+        $leaveRoom.removeAttribute("onclick");
+    }
+});
