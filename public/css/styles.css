@@ -207,6 +207,7 @@ label {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	/* flex-direction: column;   this line has no use after as we used position: absolute in <footer> */
 	justify-content: center;
 	align-items: center;
 }
@@ -217,6 +218,9 @@ label {
     background: #F7F7FA;
     padding: 24px;
     width: 250px;
+	display: flex;         /* even if we'll not write 222 and 223 the join box will remain same */
+	flex-direction: column;
+	position: relative;
 }
 
 .join_information h1 {
@@ -255,3 +259,14 @@ label {
 .list {
 	margin-bottom: 5px;
 }
+
+footer {
+	position: absolute;
+	bottom: 10px;
+}
+
+input[type="text"]::-webkit-search-cancel-button {
+	cursor: pointer;
+  }
+
+
